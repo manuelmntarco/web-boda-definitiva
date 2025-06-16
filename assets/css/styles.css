@@ -1,0 +1,122 @@
+
+/* Variables */
+:root{
+    --mx-width: 1320px;
+    --color-text-body: #64640A;
+    --color-text-logo: #0A4E2D;
+    
+}
+
+/* Estilos generales */
+html{
+    font-size:10px;
+    overflow-x:hidden;
+}
+
+body{
+    width:100%;
+    height:100%;
+    font-size: 1.6rem;
+    font-family:'DM Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-body);
+}
+
+/* Estructura */
+.layout__general{
+    width: 100%;
+    min-width: var(--mx-width);
+    height: 100%;
+}
+
+
+/* BARRA NAVEGACIÓN */
+
+.layout__menu{
+    position: fixed; /* Agregado para quedar fijo al scroll */
+    top: 0; /* Agregado para quedar fijo al scroll */
+    width: 100%;
+    padding: 0rem 3rem; /* Modificado para quedar fijo al scroll, antes 3.5 rem 3 rem */
+    font-family: 'Aniron', 'DM Sans', sans-serif;
+    background-color: rgba(243, 243, 243, 0.8); /* Agregado aquí para quedar fijo al scroll */
+    color: var(--color-text-logo);
+    z-index:1000; /* Agregado para quedar fijo al scroll */   
+}
+
+.menu__navbar{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo{
+    width: 187px;
+}
+
+.nav__list{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav__item{
+    position: relative;
+    margin: 0 2.4rem;
+}
+
+.nav__title{
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 300ms ease-in-out;
+
+}
+
+.nav__title:hover{
+    color: var(--color-text-body);
+}
+
+.nav__title::before{
+    content: "";
+    height: 0.2rem;
+    width: 0; 
+    background-color: var(--color-text-body);
+    position: absolute; /* Es absolute para poder posicionar el elemento donde yo quiera */
+    bottom: -0.7rem; /* Desde el bottom se llegará a colocar a esta distancia */
+    left: 0;
+    opacity: 0; /* Para que esté oculto */
+    transition: 500ms;
+}
+
+.nav__title:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+
+
+
+/* ESTILOS DE NOSOTROS */
+
+.layout__our{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+
+.our__photos{
+    position: relative;
+    width: 100%;
+}
+
+
+
+
+
+

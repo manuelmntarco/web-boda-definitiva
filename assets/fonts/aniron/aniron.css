@@ -1,0 +1,12 @@
+@font-face{
+    font-family: 'Aniron';
+    src: url('./anirm___.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Aniron';
+    src: url('./anirb___.ttf') format('truetype');
+    font-weight: 500;
+}
