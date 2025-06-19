@@ -1,0 +1,12 @@
+@font-face{
+    font-family: 'Nirmala UI';
+    src: url('./Nirmala.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Nirmala Ui';
+    src: url('./Nirmala.ttf') format('truetype');
+    font-weight: 500;
+}

@@ -9,6 +9,7 @@
      <link rel="stylesheet" href="./assets/fonts/uncial-antiqua/uncial-antiqua.css" />
      <link rel="stylesheet" href="./assets/fonts/aniron/aniron.css" />
      <link rel="stylesheet" href="./assets/fonts/dmsans/dmsans.css" />
+     <link rel="stylesheet" href="./assets/fonts/nirmala-ui/nirmalaUi.css" />
 
      <!-- Cargar estilos -->
      <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -81,41 +82,11 @@
             <!-- Imágenes de Nosotros -->
 
             <div class="our__photos">
-                <ul class="our__list">
-                    <li class="photos__photo">
-                        <div class="photo__container">
-                            <img class="photo__img" src="./assets/img/prueba-002.jpg" alt="Imagen 01" />
-                        </div>
-                    </li>
-
-                    <li class="photos__photo">
-                        <div class="photo__container">
-                            <img class="photo__img" src="./assets/img/prueba-004.jpg" alt="Imagen 02" />
-                        </div>
-                    </li>
-
-                    <li class="photos__photo">
-                        <div class="photo__container">
-                            <img class="photo__img" src="./assets/img/prueba-005.jpg" alt="Imagen 03" />
-                        </div>
-                    </li>
-
-                    <li class="photos__photo">
-                        <div class="photo__container">
-                            <img class="photo__img" src="./assets/img/prueba-flores.jpeg" alt="Imagen 04" />
-                        </div>
-                    </li>
-                </ul>
+                <img class="photo__img photo__img--img001" src="./assets/img/our01.jpg" alt="Imagen 01" />
+                <img class="photo__img photo__img--img002" src="./assets/img/our02.jpg" alt="Imagen 02" />
+                <img class="photo__img photo__img--img003" src="./assets/img/our03.jpg" alt="Imagen 03" />
+                <img class="photo__img photo__img--img004" src="./assets/img/our04.jpg" alt="Imagen 04" />
             </div>
-
-            <!-- Icono sobrepuesto -->
-            <ul class="we__icons">           
-                <li class="we__icons we__icons--icon1">
-                    <div class="we__icons__container">
-                        <img class="we__icons__img" src="./assets/img/icon-anillo-color001.png" />
-                    </div>
-                </li>
-            </ul>
 
         </section>
 
@@ -125,31 +96,39 @@
             <div class="cym__container">
                 <header class="cym__header">
                     <h2 class="cym__title">Estamos deseando que vengas a nuestra boda</h2>
-                    <p class="cym__date">20 Septiembre 2025</p>
+                    <p class="cym__subtitle">20 SEPTIEMBRE 2025</p>
                 </header>
 
                 <div class="cym__photos">
                     <ul class="cym__list">
                         <li class="cym__crisyman">
                             <div class="crisyman__photo crisyman__photo--photo01">
-                                <img class="crisyman__img" src="./assets/img/prueba-001.jpg" alt="Imagen 01" />
+                                <img class="crisyman__img" src="./assets/img/cym01.jpg" alt="Imagen 01" />
                             </div>
                         </li>
 
                         <li class="cym__crisyman">
                             <div class="crisyman__photo crisyman__photo--photo02">
-                                <img class="crisyman__img" src="./assets/img/prueba-002.jpg" alt="Imagen 02" />
+                                <img class="crisyman__img" src="./assets/img/cym02.jpg" alt="Imagen 02" />
                             </div>
                         </li>
 
                         <li class="cym__crisyman">
                             <div class="crisyman__photo crisyman__photo--photo03">
-                                <img class="crisyman__img" src="./assets/img/prueba-006.jpg" alt="Imagen 03" />
+                                <img class="crisyman__img" src="./assets/img/cym03.jpg" alt="Imagen 03" />
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
+
+            <ul class="cym__icons">           
+                <li class="cym__icon">
+                    <div class="cym-icon__container">
+                        <img class="cym-icon__img" src="./assets/img/cenefa001_verde.png" alt="cenefa decorativa 001" />
+                    </div>
+                </li>
+            </ul>
 
         </section>
 
@@ -163,20 +142,31 @@
                     <h3 class="informations__subtitle">¿Dónde nos casamos?</h3>
                     <h2 class="informations__title">JARDINES DE SIDDHARTA</h2>
                     <p class="informations__subtitle02">Ceremonia Civil</p>
-                    <p class="informations__date-wedding">20 Septiembre 2025</p>
                 </header>
 
                 <div class="informations__list">
 
                     <article class="informations__information informations__information--left">
                         <div class="information__container-img">
-                            <img class="restaurant__img" src="./assets/img/shidartaJardin.jpeg" alt="Imagen shidartaJardin" />
+                            <img class="information__img" src="./assets/img/shidartaJardin.jpeg" alt="Imagen shidartaJardin" />
+                        </div>
+                        <div class="information__content">
+                            <h3 class="information__title">LOS JARDINES</h3>
+                        </div>
+                        <div class="information__description">
+                            <p class="information__paragraph">Donde celebraremos la copa de bienvenida</p>
                         </div>
                     </article>
 
                     <article class="informations__information informations__information--right">
                         <div class="information__container-img">
-                            <img class="restaurant__img" src="./assets/img/shidartaSalon.jpg" alt="Imagen shidartaSalon" />
+                            <img class="information__img" src="./assets/img/shidartaSalon.jpg" alt="Imagen shidartaSalon" />
+                        </div>
+                        <div class="information__content">
+                            <h3 class="information__title">EL SALÓN</h3>
+                        </div>
+                        <div class="information__description">
+                            <p class="information__paragraph">Aquí tomaremos un delicioso banquete</p>
                         </div>
                     </article>
                 </div>
@@ -185,7 +175,7 @@
             <ul class="information__shapes">           
                 <li class="information__shapes information__shapes--shape01">
                     <div class="information-shapes__container">
-                        <img class="information-shapes__img" src="./assets/img/hoja001.jpg" />
+                        <img class="information-shapes__img" src="./assets/img/imagenSBG004.png" />
                     </div>
                 </li>
             </ul>
@@ -197,23 +187,26 @@
 
             <div class="localization__grid">
 
-                <header class="localization__title">Dirección:</header>
-                <div class="localization__map">
+                <header class="localization__header">
+                    <h2 class="localization__title">JARDINES DE SIDDHARTA</h2>
+                    <h4 class="localization__subtitle">Dirección:</h4>
+                </header>
 
-                    <iframe class= "localization__map localization__map-map001" 
+                <div class="localization__map">
+                    <iframe class= "localization__map-item" 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.3381614
                     565797!2d-3.578123624403278!3d37.14465797215099!2m3!1f0!2f0!3f0!3m2!1i1024!2i76
                     8!4f13.1!3m3!1m2!1s0xd71e4b19cf9c813%3A0xa9a09bae76dc6e70!2sJardines%20de%20
                     Siddharta!5e0!3m2!1ses!2ses!4v1749371102092!5m2!1ses!2ses"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                    allowfullscreen="" loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 
-            <ul class="localization__localization-shapes">           
-                <li class="localization-shapes__item localization-shapes__item--item1">
-                    <div class="localization-shapes__container">
-                        <img class="localization-shapes__img" src="./assets/img/line-1.png" />
+            <ul class="localization__background">           
+                <li class="localization__bg-item">
+                    <div class="localizationbg__container">
+                        <img class="localizationbg__img" src="./assets/img/bacgroundImageOlive.png" />
                     </div>
                 </li>
             </ul>
