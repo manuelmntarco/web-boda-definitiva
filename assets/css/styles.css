@@ -465,7 +465,368 @@ body{
 }
 
 
-/* ESTILOS DE ********* */
+/* ESTILOS DE COMO LLEGAR */
+
+.layout__arrives{
+    position: relative;
+    padding: 2rem 10rem;
+    margin-bottom: 10rem;
+}
+
+.arrives__grid{
+    position: relative;
+    max-width: 100%;
+    padding: 0 5rem;
+}
+
+.arrives__header{
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.arrives__title{
+    font-family: 'Aniron', 'Nirmala UI', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;  
+}
+
+.arrives__content{
+    display: flex;
+    flex-direction: row;
+    gap: 60px; 
+}
+
+.arrive__description{
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 550;
+    color:var(--color-text-logo);
+    text-align: center;
+}
+
+.arrive__img{
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.arrives__arrive{
+    border-radius: 20px;
+    box-shadow: 0 24px 48px -15px #ddd;
+    /* Un sombreado de 0px, 24px de movimiento en y, 48 de difuminado, -15 de extensión de sombra, y el color. */
+    border: 1px transparent gray;
+}
+
+
+/* ESTILOS DE TRANSPORTE */
+
+.layout__transports{
+    position: relative;
+    padding: 0 10rem;
+    margin-bottom: 8rem;
+}
+
+.transports__container{
+    position: relative;
+    max-width: 100%;
+    padding: 0 5rem;
+}
+
+.transports__header{
+    text-align: center;
+    font-family: 'Aniron', 'Nirmala UI', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2; 
+}
+
+.transports__list{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    gap: 60px; 
+    
+}
+
+.transports__transport--001{
+    flex: 70%;
+}
+.transports__transport--002{
+    flex: 30%;
+}
+
+.transport__img{
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: center 80%;
+}
+
+.transport__title{
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-text-logo);
+}
+
+.transport__paragraph{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-text-logo);
+}
+
+
+/* ESTILO DE ALOJALMIENTOS */
+
+.layout__hotels{
+    position: relative;
+    padding: 0 10rem;
+    z-index: 0;
+    margin-bottom: 10rem;
+}
+
+.hotels__container{
+    position: relative;
+    max-width: 100%;
+    padding: 0 5rem;
+}
+
+.hotels__header{
+    margin-bottom: 4rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.hotels__subtitle{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-text-subtitle-cym);
+}
+
+.hotels__title{
+    font-family: 'Aniron', 'Nirmala UI', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
+    line-height: 1.2;
+}
+
+.hotels__list{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.hotels__hotel{
+
+    background-color: #fff; /* Fondo blanco (ajústalo según tu diseño) */
+    border-radius: 20px;     /* Esquinas redondeadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden;       /* Para que las imágenes no sobresalgan */
+    transition: box-shadow 300ms ease, transform 300ms ease;
+    padding: 1.5rem;
+    z-index: 2;
+}
+
+.hotel__img{
+    width: 100%;
+    height: 50rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.hotel__icon{
+    font-size: 1.1rem;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.hotel__link{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    position: relative; /* Necesario para posicionar ::before */
+    text-decoration: none;
+    color: inherit;
+    transition: color 300ms ease-in-out;
+}
+
+.hotel__link:hover{
+    color: var(--color-text-logo);
+}
+
+.hotel__text{
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+}
+
+
+.hotel__text::before{
+    content: "";
+    height: 0.2rem;
+    width: 0; 
+    background-color: var(--color-text-logo);
+    position: absolute; /* Es absolute para poder posicionar el elemento donde yo quiera */
+    bottom: -0.3rem; /* Desde el bottom se llegará a colocar a esta distancia */
+    left: 0;
+    opacity: 0; /* Para que esté oculto */
+    transition: width 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+.hotel__link:hover .hotel__text::before{
+    width: 100%;
+    opacity: 1;
+}
+
+.hotel__icon{
+    font-size: 1.2rem;
+    line-height: 1;
+    transform: translateY(1.5px); /* Para alinear la flecha con el texto */
+}
+
+
+/* ESTILOS DE FORMULARIO */
+
+.layout__forms{
+    position: relative;
+    margin-bottom: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.forms__container{
+    position: relative;
+    max-width: 100%;
+    padding: 0 5rem;
+    z-index: 2;
+}
+
+.forms__header{
+    z-index: 2;
+    text-align: center;
+}
+
+.forms__title{
+    font-family: 'Aniron', 'Nirmala UI', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height:  1.2;
+}
+
+.forms__subtitle{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-text-subtitle-cym);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* FORMULARIO EN CAJA CON SOMBRA */
+.forms__form {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    padding: 4rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* GRUPOS DE FORMULARIO */
+.form__group {
+    margin-bottom: 2.5rem;
+}
+
+.form__label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    color: var(--color-text-logo);
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: inherit;
+    transition: border-color 300ms;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+    border-color: var(--color-text-logo);
+    outline: none;
+}
+
+/* BOTÓN DE ENVÍO */
+.form__button {
+    background-color: var(--color-btn-our);
+    color: #000;
+    font-weight: 600;
+    padding: 1.2rem 2.4rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+    margin: 0 auto;
+}
+
+.form__button:hover {
+    background-color: var(--color-btn-our-hover);
+    color: #fff;
+}
+
+.forms__bg-item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;         /* Escala la imagen para llenar el contenedor sin deformarse */
+    pointer-events: none;      /* Para que no interfiera con los clics del formulario */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
