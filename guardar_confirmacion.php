@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = ""; // cambia si tienes contraseña
-$database = "invitados";
+$username = "u624946957_manuelmont";
+$password = "***CONTRASENA_ELIMINADA***"; // cambia si tienes contraseña
+$database = "u624946957_boda_invitados";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $database);

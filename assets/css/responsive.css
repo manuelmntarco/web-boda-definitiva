@@ -1,0 +1,667 @@
+
+
+/* Responsive para PANTALLAS GRANDES (más de 1600px):  */
+@media (min-width: 1600px){
+
+    body{
+        min-width: 1600;
+    }
+}
+
+
+
+/* RESPONSIVE PARA PANTALLAS MEDIANAS: */
+@media (min-width: 1199px) and (max-width: 1400px){
+
+    .layout__general{
+        min-width: 1199px;
+    }
+
+    .cym__container {
+    padding: 0px 3rem;
+    }
+    .cym__list {
+    gap: 4rem;
+    }
+
+    .layout__informations {
+    padding: 3rem 2rem;
+    }
+    .informations__list {
+        gap: 20rem;
+    }
+    
+    .layout__arrives{
+        padding: 2rem 3rem;
+        margin-bottom: 5rem;
+    }
+    .arrives__content {
+        gap: 2rem;
+    }
+
+    .transports__list{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .transports__transport--002{
+        width: 50%;
+    }
+
+    .layout__hotels{
+        padding: 0 2rem;
+    }
+    .hotels__list {
+        gap: 1rem;
+    }
+}
+
+/* RESPONSIVE PARA TABLETS, menos de 1200px */
+
+
+@media (max-width: 1200px){
+    .layout__general{
+        min-width: 992px;
+    }
+
+    .nav__list{
+        font-size: 1.4rem;
+    }
+
+    .layout__our {
+        height: 80rem;
+    }
+    .our__subtitle {
+        font-size: 2rem;
+    }
+    .our__title {
+        font-size: 5rem;
+    }
+
+    .layout__cym{
+        margin-top: 4rem;
+        margin-bottom: 0rem;
+    }
+    .cym__container {
+        padding: 0 2rem;
+    }
+    .cym__icon {
+        margin: -16rem auto 2rem auto;
+    }
+
+    .layout__informations {
+        padding: 3rem 1rem;
+        margin-bottom: 8rem;
+    }
+    .informations__list {
+        gap: 19rem;
+    }
+    .informations__title{
+        font-size: 3.5rem;
+    }
+
+    .layout__localization {
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+    }
+    .localization__title {
+        font-size: 3.5rem;
+        padding-top: 6rem;
+    }
+
+    .layout__arrives {
+        padding: 3rem 1rem;
+        margin-bottom: 2rem;
+    }
+    .arrives__title {
+        font-size: 3.5rem;
+        margin-top: 0rem;
+    }
+    .arrive__img {
+        height: 40rem;
+    }
+    .arrives__content {
+        gap: 2rem;
+    }
+
+    .layout__transports {
+        padding: 0 1rem;
+        margin-bottom: 3rem;
+    }
+    .transports__list{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .transports__transport--002{
+        width: 50%;
+    }
+
+    .layout__hotels{
+        margin-bottom: 8rem;
+    }
+    .hotels__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hotels__hotel{
+        max-width: 80%;
+        align-items: center;
+    }
+    .hotel__img{
+        height: 40rem;
+    }
+    .hotels__hotel--hotel02{
+        max-width: 58%;
+    }
+
+    .layout__forms{
+        margin-bottom: 0;
+    }
+    .account__container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .account__title {
+        margin-top: -2.5rem;
+        margin-bottom: 3.5rem;
+    }
+    .account__content{
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto 0 auto;
+        font-size: 2rem;
+    }
+    .account__bg-item {
+        width: 105%;
+        left: -2%;
+    }
+
+    .layout__foot{
+        margin-top: 26rem;
+    }
+}
+
+
+/* RESPONSIVE PARA TELÉFONOS GRANDES de 0 a 1000px  */
+
+
+@media (max-width: 1000px){
+    .layout__general{
+        min-width: 770px;
+    }
+
+    /* Ocultamos la barra de navegación normal:  */
+    .navbar__nav{
+        display: none;
+    }
+
+    /* Sacamos el botón de navegación responsive:  */
+
+    .navbar__mobile-btn{
+        display: block;
+    }
+
+    /* Quitamos estilos de layout__menu para que se quede fija arriba, reducida y con mas transparency:  */
+    .layout__menu{
+        position: absolute; /* Agregado para quedar fijo al scroll */
+
+        padding: 0rem 3rem; /* Modificado para quedar fijo al scroll, antes 3.5 rem 3 rem */
+        background-color: rgba(243, 243, 243, 0.1);; /* Agregado aquí para quedar fijo al scroll */
+        z-index:1000; /* Agregado para quedar fijo al scroll */   
+    }
+
+    .navbar__logo{
+        width: 13rem;
+    }
+    .our__photos{
+        height: 70rem;
+    }
+
+    .cym__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cym__crisyman {
+        width: 60%;
+    }
+    .cym__title {
+        font-size: 4rem;
+        margin-top: -8rem;
+    }
+    .cym__icon{
+        display: none;
+    }
+
+    .layout__informations {
+        padding: 3rem 5rem;
+        margin-bottom: 6rem;
+    }
+    .informations__title {
+        font-size: 3rem;
+    }
+    .information__shapes--shape01 {
+        display: none;
+    }
+    .informations__list {
+        flex-direction: column;
+        gap: 6rem;
+    }
+    .information__title {
+        font-size: 2.5rem;
+    }
+
+    .localization__title{
+        font-size: 3rem;
+    }
+    .localization__map-item {
+        width: 81%;
+    }
+
+    .layout__arrives{
+        margin-bottom: 5rem;
+    }
+    .arrives__title {
+        font-size: 3rem;
+    }
+    .arrives__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .arrives__content {
+        padding: 0 10rem;
+        gap: 3rem;
+    }
+
+    .layout__transports{
+        margin-bottom: 3rem;
+    }
+    .transports__transport--001 {
+        width: 80%;
+    }
+    .transports__transport--002 {
+        width: 70%;
+    }
+
+    .layout__hotels {
+        margin-bottom: 6rem;
+    }
+    .hotels__title {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+    .hotel__title{
+        font-size: 2rem;
+    }
+    .hotel__text{
+        font-size: 2rem;
+        padding-top: 0.5rem;
+    }
+    .hotels__hotel {
+        width: 87%;
+    }
+    .hotels__hotel--hotel02 {
+        max-width: 80%;
+    }
+
+    .account__title {
+        font-size: 3.5rem;
+    }
+    .account__content {
+        margin: -1rem auto 0 auto;
+        font-size: 1.9rem;
+    }
+
+    .layout__foot{
+        margin-top: 13rem;
+    }
+}
+
+
+
+
+ /* RESPONSIVE PARA móviles de 0 a 770px  */
+
+@media (max-width: 770px){
+
+    .layout__general{
+        min-width: 640px;
+    }
+
+    .navbar__logo{
+        width: 11rem;
+    }
+
+    .cym__container {
+        padding: 0px 0rem;
+    }
+    .cym__title {
+        font-size: 3.5rem;
+    }
+
+    .layout__informations {
+        padding: 1rem 5rem;
+    }
+    .informations__title {
+        font-size: 2.5rem;
+    }
+    .informations__title {
+        margin-top: 1.5rem;
+    }
+
+    .localization__title {
+        font-size: 2.5rem;
+        padding-top: 4rem;
+    }
+    .informations__subtitle, 
+    .informations__subtitle02, 
+    .localization__subtitle {
+        font-size: 2.3rem;
+    }
+
+    .localization__grid{
+        padding: 0 2rem;
+    }
+    .localization__map-item{
+        margin: 0rem auto 0 auto;
+    }
+    .localization__bg-item {
+        top: 61%;
+    }
+
+    .layout__arrives {
+        margin-bottom: 3rem;
+    }
+    .arrives__grid {
+        padding: 0 0rem;
+    }
+    .arrives__content {
+        padding: 0 8rem;
+    }
+
+    .transports__header {
+        font-size: 2.3rem;
+        margin-bottom: -1.5rem;
+    }
+    .transports__container {
+        padding: 0 0rem;
+    }
+    .transports__transport--002 {
+        width: 75%;
+    }
+    .transport__paragraph {
+        font-size: 1.7rem;
+    }
+
+    .layout__hotels {
+        padding: 0 0rem;
+    }
+
+    .layout__forms{
+        padding-bottom: 6rem;
+    }
+
+    .form__button{
+        padding: 0.8rem 2.4rem;
+    }
+
+    .account__bg-item {
+        width: 120%;
+        left: -9%;
+        top: 18%;
+    }
+    .account__title {
+        font-size: 3rem;
+    }
+
+    .account__subtitle {
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+    }
+    .account__content {
+        font-size: 1.8rem;
+    }
+
+    .layout__foot {
+        margin-top: 10rem;
+    }
+}
+
+
+ /* RESPONSIVE PARA MÓVILES MUY PEQUEÑOS (de 0 a 640px) */
+
+
+@media (max-width: 640px){
+
+    .layout__general{
+        min-width: 480px;
+    }
+
+    .navbar__logo{
+        width: 9rem;
+    }
+
+    .mobile-btn__wrap {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .photo__img:nth-child(3){
+        object-position: 20% 80%;
+        animation-delay: 8s;
+    }
+    .our__btn {
+        padding: 0.7rem 1.8rem;
+    }
+
+    .layout__cym {
+        margin-bottom: -2rem;
+    }
+    .cym__title {
+        font-size: 2.7rem;
+        margin-top: -11rem;
+        margin-bottom: -0.5rem;
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+    .cym__subtitle {
+        font-size: 2rem;
+    }
+    .cym__list {
+        gap: 4rem;
+    }
+    .cym__crisyman:nth-child(2) {
+        margin-top: 0rem;
+    }
+
+    .layout__informations {
+        padding: 1rem 2rem;
+    }
+
+    .informations__title {
+        font-size: 2rem;
+        margin-top: -1rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.7;
+        padding-top: 2rem;
+    }
+    .informations__list{
+        padding: 0rem 3rem;
+        gap: 3rem;
+    }
+    .information__title {
+        font-size: 2rem;
+    }
+    .information__paragraph {
+        font-size: 1.5rem;
+    }
+    
+    .localization__title {
+        font-size: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 0rem;
+    }
+
+    .informations__subtitle, .informations__subtitle02, .localization__subtitle{
+        font-size: 1.8rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .arrives__title {
+        font-size: 2.5rem;
+    }
+    .arrive__description {
+        font-size: 1.5rem;
+    }
+
+    .transports__header {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .transport__title {
+        font-size: 1.8rem;
+    }
+    .transport__paragraph {
+        font-size: 1.4rem;
+    }
+    .transport__img {
+        height: 35rem;
+    }
+
+    .hotels__subtitle {
+        font-size: 2rem;
+    }
+    .hotels__title {
+        font-size: 2.5rem;
+    }
+    .hotel__img {
+        height: 36rem;
+    }
+    .hotel__description{
+        font-size: 1.4rem;
+    }
+
+    .forms__title{
+        font-size: 3rem;
+    }
+    .forms__subtitle{
+        font-size: 2rem;
+    }
+
+    .account__title{
+        font-size: 2.3rem;
+    }
+    .account__subtitle{
+        font-size: 2rem;
+    }
+    .account__content{
+        font-size: 1.4rem;
+    }
+
+    .account__bg-item {
+        width: 120%;
+        left: -9%;
+        top: 23%;
+    }
+
+    .layout__foot{
+        font-size: 1.5rem;
+    }
+
+    .mobile-btn__line{
+        width: 1rem;
+        height: 0.1rem;
+    }
+    .mobile-btn__line:last-child{
+        width: 0.5rem;
+        margin-right: 0rem;
+    }
+}
+
+
+ /* RESPONSIVE PARA MÓVILES MUY MUY PEQUEÑOS (de 0 a 480px) */
+
+@media (max-width: 480px){
+    
+    .layout__general{
+        min-width: 320px;
+    }
+
+    .our__title{
+        font-size: 4rem;
+    }
+    .our__btn{
+        padding: 0.5rem 1.7rem;
+    }
+
+    .cym__crisyman{
+        width: 69%;
+    }
+
+    .layout__informations{
+        padding: 1rem 0rem;
+    }
+
+    .localization__grid {
+        padding: 0 0;
+    }
+    .localization__title{
+        line-height: 3.5rem;
+    }
+    .localization__bg-item{
+        top: 69%;
+    }
+
+    .arrives__content{
+        padding: 0 3.5rem;
+    }
+    .layout__arrives{
+        padding: 2rem 0;
+    }
+
+    .transports__transport--001{
+        width: 90%;
+    }
+
+    .transports__transport--002{
+        width: 95%;
+    }
+
+    .hotels__container{
+        padding: 0 0;
+    }
+    .hotels__title{
+        padding: 0 1rem
+    }
+
+    .account__content{
+        font-size: 0.9rem;
+    }
+    .account__bg-item {
+        width: 135%;
+        left: -17%;
+        top: 43%;
+    }
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

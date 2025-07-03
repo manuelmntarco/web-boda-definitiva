@@ -14,6 +14,7 @@
      <!-- Cargar estilos -->
      <link rel="stylesheet" href="./assets/css/reset.css" />
      <link rel="stylesheet" href="./assets/css/styles.css" />
+     <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <!-- Cargar JS -->
 
@@ -22,6 +23,55 @@
 </head>
 <body>
 
+    <!-- MENÚ NAVEGACIÓN RESPONSIVE  -->
+     
+    <div class="menu-mobile">
+
+        <header class="menu-mobile__header">
+            <div class="menu-mobile__container-logo">
+                <a class="menu-mobile__link-logo" href="#">
+                    <img class="menu-mobile__logo" src="assets/img/logoCyM001.png" alt="logo del sitio web"/>
+                </a>
+            </div>
+            <button class="menu-mobile__close">
+                <i class="menu-mobile__icon-close fa-solid fa-xmark"></i>
+            </button>
+        </header>
+
+        <div class="menu-mobile__body">
+
+            <nav class="menu-mobile__nav">
+                    <ul class="menu-mobile__list">
+
+                        <li class="menu-mobile__item">
+                            <a href="#nosotros" class="menu-mobile__link">Nosotros</a>
+                        </li>
+
+                        <li class="menu-mobile__item">
+                            <a href="#informacion" class="menu-mobile__link">Información</a>
+                        </li>
+
+                        <li class="menu-mobile__item">
+                            <a href="#localizacion" class="menu-mobile__link">Localización</a>
+                        </li>
+
+                        <li class="menu-mobile__item">
+                            <a href="#llegar" class="menu-mobile__link">Como llegar</a>
+                        </li>
+
+                        <li class="menu-mobile__item">
+                            <a href="#alojamientos" class="menu-mobile__link">Alojamientos</a>
+                        </li>
+
+                        <li class="menu-mobile__item">
+                            <a href="#formulario" class="menu-mobile__link">Formulario</a>
+                        </li>                       
+                    </ul>
+                </nav>   
+        </div>
+    </div>
+
+    <!-- LAYAUT PRINCIPAL O ESTRUCTURA PRICIPAL  -->
     <div class="layout__general">
 
         <!-- MENU-->
@@ -33,6 +83,16 @@
                     <a href="#" class="navbar__link-logo">
                         <img src="./assets/img/logoCyM001.png" class="navbar__logo-light" />
                     </a>
+                </div>
+
+                <!-- BOTÓN DE MENÚ RESPONSIVE  -->
+
+                <div class="navbar__mobile-btn">
+                    <button class="mobile-btn__wrap">
+                        <span class="mobile-btn__line"></span>
+                        <span class="mobile-btn__line"></span>
+                        <span class="mobile-btn__line"></span>
+                    </button>
                 </div>
 
                 <!-- NAVEGACION -->
@@ -194,10 +254,7 @@
 
                 <div class="localization__map">
                     <iframe class= "localization__map-item" 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.3381614
-                    565797!2d-3.578123624403278!3d37.14465797215099!2m3!1f0!2f0!3f0!3m2!1i1024!2i76
-                    8!4f13.1!3m3!1m2!1s0xd71e4b19cf9c813%3A0xa9a09bae76dc6e70!2sJardines%20de%20
-                    Siddharta!5e0!3m2!1ses!2ses!4v1749371102092!5m2!1ses!2ses"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.3381614565797!2d-3.578123624403278!3d37.14465797215099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71e4b19cf9c813%3A0xa9a09bae76dc6e70!2sJardines%20de%20Siddharta!5e0!3m2!1ses!2ses!4v1749371102092!5m2!1ses!2ses"
                     allowfullscreen="" loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -349,7 +406,7 @@
                         </div>
                     </article>
 
-                    <article class="hotels__hotel">
+                    <article class="hotels__hotel hotels__hotel--hotel02">
                         <div class= "hotel__container-img">
                             <img class="hotel__img hotel__img--img002" src="./assets/img/hotelQuintaReal.jpg" alt="Hotel Quinta Real" />
                         </div>
@@ -446,18 +503,17 @@
                 </header>
 
                 <div class="account__content">
-                    <h2 class="account__number">ESXX 1234 5678 9A BCDEFGHIJK</h2>
+                    <h2 class="account__number">ES97 0237 0717 3091 7381 6030</h2>
                 </div>
+
+                <ul class="account__background">           
+                    <li class="account__bg-item">
+                        <div class="accountbg__container">
+                            <img class="accountbg__img" src="./assets/img/backgroundForm.png" />
+                        </div>
+                    </li>
+                </ul>
             </div>
-
-            <ul class="account__background">           
-                <li class="account__bg-item">
-                    <div class="accountbg__container">
-                        <img class="accountbg__img" src="./assets/img/backgroundForm.png" />
-                    </div>
-                </li>
-            </ul>
-
         </section>
     </div>  
     <!-- PIE DE PAGINA-->
