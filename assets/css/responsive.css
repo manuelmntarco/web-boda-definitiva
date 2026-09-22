@@ -184,6 +184,22 @@
 }
 
 
+/* Agregado posteriormente debido a problema de superposición de menús en Hostinger:  */
+
+@media (min-width: 1001px) {
+  .navbar__nav {
+    display: flex; /* o inline-flex si lo prefieres */
+  }
+
+  .navbar__mobile-btn {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: none !important;
+  }
+}
+
 /* RESPONSIVE PARA TELÉFONOS GRANDES de 0 a 1000px  */
 
 
@@ -205,7 +221,7 @@
 
     /* Quitamos estilos de layout__menu para que se quede fija arriba, reducida y con mas transparency:  */
     .layout__menu{
-        position: absolute; /* Agregado para quedar fijo al scroll */
+        position: fixed; /* Cambiado de absolute a fixed al tener problemas de superposición de menús en Hostinger */
 
         padding: 0rem 3rem; /* Modificado para quedar fijo al scroll, antes 3.5 rem 3 rem */
         background-color: rgba(243, 243, 243, 0.1);; /* Agregado aquí para quedar fijo al scroll */
