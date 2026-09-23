@@ -1,16 +1,23 @@
 <?php
-$servername = "localhost";
-$username = "u624946957_manuelmont";
-$password = "***CONTRASENA_ELIMINADA***"; // cambia si tienes contraseña
-$database = "u624946957_boda_invitados";
+// Cargar la configuración de la base de datos.
+// config.php no está en Git: se crea a partir de config.example.php
+$config = require __DIR__ . '/config.php';
 
 // Crear conexión
-$conn = new mysqli($servername, $username, $password, $database);
+$conn = new mysqli(
+    $config['host'],
+    $config['usuario'],
+    $config['password'],
+    $config['base']
+);
 
 // Verificar conexión
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
+
+// Usar UTF-8 completo para que tildes y eñes se guarden bien
+$conn->set_charset('utf8mb4');
 
 // Obtener datos del formulario
 $nombre = $_POST['nombre'];
