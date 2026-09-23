@@ -17,7 +17,6 @@
 /* Estilos generales */
 html{
     font-size:10px;
-    overflow-x:hidden;
 }
 
 body{
@@ -33,7 +32,6 @@ body{
 /* Estructura */
 .layout__general{
     width: 100%;
-    min-width: var(--mx-width);
     height: 100%;
 }
 
@@ -832,6 +830,7 @@ body{
     margin-top: 0;
     z-index: 1;
     margin-bottom: 5rem;
+    overflow: hidden; /* El fondo decorativo sobresale en móvil: sin esto ensancha la página y oculta el botón del menú */
 }
 
 .account__container{

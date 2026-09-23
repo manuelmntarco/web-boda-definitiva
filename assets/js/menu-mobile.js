@@ -32,4 +32,13 @@ document.addEventListener("DOMContentLoaded", (event) =>{
     let btn_close = document.querySelector(".menu-mobile__close");
 
     btn_close.addEventListener("click", showHiddenMenu);
+
+    // Al pulsar una opción del menú, cerrarlo para que no tape la sección:
+    let menu_links = document.querySelectorAll(".menu-mobile__link");
+
+    menu_links.forEach((link) => {
+        link.addEventListener("click", () => {
+            mobile_menu.classList.remove("menu-mobile--show");
+        });
+    });
 });

@@ -1,21 +1,9 @@
 
 
-/* Responsive para PANTALLAS GRANDES (más de 1600px):  */
-@media (min-width: 1600px){
-
-    body{
-        min-width: 1600;
-    }
-}
-
 
 
 /* RESPONSIVE PARA PANTALLAS MEDIANAS: */
 @media (min-width: 1199px) and (max-width: 1400px){
-
-    .layout__general{
-        min-width: 1199px;
-    }
 
     .cym__container {
     padding: 0px 3rem;
@@ -60,10 +48,6 @@
 
 
 @media (max-width: 1200px){
-    .layout__general{
-        min-width: 992px;
-    }
-
     .nav__list{
         font-size: 1.4rem;
     }
@@ -204,10 +188,6 @@
 
 
 @media (max-width: 1000px){
-    .layout__general{
-        min-width: 770px;
-    }
-
     /* Ocultamos la barra de navegación normal:  */
     .navbar__nav{
         display: none;
@@ -342,10 +322,6 @@
 
 @media (max-width: 770px){
 
-    .layout__general{
-        min-width: 640px;
-    }
-
     .navbar__logo{
         width: 11rem;
     }
@@ -450,10 +426,6 @@
 
 
 @media (max-width: 640px){
-
-    .layout__general{
-        min-width: 480px;
-    }
 
     .navbar__logo{
         width: 9rem;
@@ -601,10 +573,6 @@
 
 @media (max-width: 480px){
     
-    .layout__general{
-        min-width: 320px;
-    }
-
     .our__title{
         font-size: 4rem;
     }
