@@ -1,0 +1,31 @@
+services:
+  web:
+    build: .                      # construye la imagen con el Dockerfile
+    ports:
+      - "127.0.0.1:8080:80"                 # http://localhost:8080 → Apache
+    volumes:
+      - ./:/var/www/html          # el código del repo, en vivo
+    depends_on:
+      db:
+        condition: service_healthy   # espera a que MySQL esté listo
+
+  db:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: root_dev
+      MYSQL_DATABASE: boda        # mismos valores que config.example.php
+      MYSQL_USER: boda
+      MYSQL_PASSWORD: boda_dev
+    ports:
+      - "127.0.0.1:3307:3306"               # 3306 lo ocupa el MySQL nativo
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d:ro
+      - datos-mysql:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-u", "root", "-proot_dev"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  datos-mysql:
